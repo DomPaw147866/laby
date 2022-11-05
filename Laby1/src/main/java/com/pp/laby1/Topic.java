@@ -19,7 +19,7 @@ public enum Topic {
         this.fullName = fullName ;
     }
     
-    public String getName(){
+    public String info(){
         return fullName;
     }
     
