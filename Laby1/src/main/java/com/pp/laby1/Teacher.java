@@ -21,7 +21,7 @@ public class Teacher {
 
    
    
-    public String getFullName(){
+    public String info(){
         return firstName + " "+lastName ;
     }
    
