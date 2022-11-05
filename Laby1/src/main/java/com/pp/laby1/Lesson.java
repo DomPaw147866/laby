@@ -38,19 +38,7 @@ public class Lesson {
         
         
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public Topic getTopic() {
-        return topic;
-    }
-
-    public Set<Student> getStudents() {
-        return students;
-    }
-
+    
     public void changeStudents(Set<Student> students) {
         this.students = students;
     }
@@ -63,22 +51,14 @@ public class Lesson {
         this.teacher = teacher;
     }
 
-    public ClassRoom getClassRoom() {
-        return classRoom;
-    }
-
-    public Teacher getTeacher() {
-        return teacher;
-    }
-    
     public void info(){
         System.out.println(
                 String.format("Nazwa i typ zajęć: %s:s%, Prowadzący: %s, Nazwa sali: %s, Uczestniczący: %s",
                         name,
-                        topic.getName(),
-                        teacher.getFullName(),
-                        classRoom.getName(),
-                        String.join(",\n ", students.stream().map(Student::getIndex).collect(Collectors.toSet()))));
+                        topic.info(),
+                        teacher.info(),
+                        classRoom.inf(),
+                        String.join(",\n ", students.stream().map(Student::index).collect(Collectors.toSet()))));
     
     }
 }
