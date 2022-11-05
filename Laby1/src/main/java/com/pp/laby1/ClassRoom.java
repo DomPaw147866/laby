@@ -21,7 +21,7 @@ public class ClassRoom {
     }
     
     
-    public String getName() {
+    public String info() {
         return name;
     }
 
