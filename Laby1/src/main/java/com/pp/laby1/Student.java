@@ -22,7 +22,7 @@ public class Student {
         this.index = index;
     }
     
-    public String getIndex() {
+    public String index() {
         return index;
     }
 
